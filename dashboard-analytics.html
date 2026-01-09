@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics - VR/AR Pro</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2300d4ff;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%238b5cf6;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='20' fill='url(%23grad)'/%3E%3Ctext x='50' y='70' font-size='60' text-anchor='middle' fill='white'%3E🥽%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Sidebar Toggle (Mobile) -->
+    <button class="sidebar-toggle">☰</button>
+
+    <!-- Dashboard Container -->
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="dashboard-sidebar">
+            <div style="padding: 2rem; border-bottom: 1px solid rgba(0, 212, 255, 0.2);">
+                <a href="index.html" class="logo" style="font-size: 1.5rem; display: block; margin-bottom: 1.5rem;">VR/AR Pro</a>
+                <p class="user-name" style="color: var(--text-primary); font-weight: bold; margin-bottom: 0.25rem;">User</p>
+                <p class="user-email" style="color: var(--text-secondary); font-size: 0.9rem;">user@example.com</p>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="dashboard.html">Overview</a></li>
+                <li><a href="dashboard-analytics.html" class="active">Analytics</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="demo.html">Demos</a></li>
+                <li><a href="contact.html">Support</a></li>
+                <li><a href="pricing.html">Billing</a></li>
+                <li style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(0, 212, 255, 0.2);">
+                    <button class="btn btn-secondary logout-btn" style="width: 100%;">Logout</button>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="dashboard-content">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+                <h1 style="color: var(--primary-cyan);">Analytics</h1>
+                <select class="form-control date-filter" style="width: auto; min-width: 200px;">
+                    <option value="7days">Last 7 Days</option>
+                    <option value="30days" selected>Last 30 Days</option>
+                    <option value="90days">Last 90 Days</option>
+                    <option value="1year">Last Year</option>
+                </select>
+            </div>
+
+            <!-- User Growth Chart -->
+            <div class="chart-container">
+                <h3 class="chart-title">User Growth</h3>
+                <div id="user-growth-chart" style="height: 250px; display: flex; align-items: flex-end; justify-content: space-around; padding: 1rem;"></div>
+            </div>
+
+            <!-- Revenue Chart -->
+            <div class="chart-container">
+                <h3 class="chart-title">Revenue</h3>
+                <div id="revenue-chart" style="height: 250px; padding: 1rem;"></div>
+            </div>
+
+            <!-- Product Views Chart -->
+            <div class="chart-container">
+                <h3 class="chart-title">Product Views</h3>
+                <div id="product-views-chart" style="height: 250px; display: flex; align-items: flex-end; justify-content: space-around; padding: 1rem;"></div>
+            </div>
+
+            <!-- Additional Stats -->
+            <div class="stats-grid" style="margin-top: 2rem;">
+                <div class="stat-card">
+                    <div class="stat-value">85%</div>
+                    <div class="stat-label">Conversion Rate</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">2.5K</div>
+                    <div class="stat-label">Page Views</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">1.2K</div>
+                    <div class="stat-label">Unique Visitors</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">4.2min</div>
+                    <div class="stat-label">Avg. Session</div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle">🌓</button>
+
+    <script src="js/main.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
+

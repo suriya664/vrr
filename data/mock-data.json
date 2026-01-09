@@ -1,0 +1,145 @@
+{
+  "dashboard": {
+    "stats": {
+      "totalUsers": 1250,
+      "activeSessions": 342,
+      "revenue": 125000,
+      "products": 45
+    },
+    "recentActivity": [
+      {
+        "date": "2024-01-15",
+        "user": "John Doe",
+        "action": "Purchased VR Headset Pro",
+        "status": "Completed"
+      },
+      {
+        "date": "2024-01-15",
+        "user": "Jane Smith",
+        "action": "Requested Demo",
+        "status": "Pending"
+      },
+      {
+        "date": "2024-01-14",
+        "user": "Mike Johnson",
+        "action": "Subscribed Newsletter",
+        "status": "Completed"
+      },
+      {
+        "date": "2024-01-14",
+        "user": "Sarah Williams",
+        "action": "Downloaded Product Catalog",
+        "status": "Completed"
+      },
+      {
+        "date": "2024-01-13",
+        "user": "David Brown",
+        "action": "Contacted Support",
+        "status": "In Progress"
+      }
+    ]
+  },
+  "analytics": {
+    "userGrowth": [120, 150, 180, 200, 250, 300, 350],
+    "revenue": [10000, 15000, 12000, 18000, 20000, 25000, 30000],
+    "productViews": [450, 520, 480, 600, 750, 800, 900]
+  },
+  "products": [
+    {
+      "id": 1,
+      "name": "VR Headset Pro",
+      "category": "vr",
+      "price": 599.99,
+      "description": "High-end VR headset with 4K display and advanced tracking",
+      "image": "https://images.unsplash.com/photo-1593642634367-d91a135587b5"
+    },
+    {
+      "id": 2,
+      "name": "AR Smart Glasses",
+      "category": "ar",
+      "price": 899.99,
+      "description": "Next-generation AR glasses with holographic display",
+      "image": "https://images.unsplash.com/photo-1602526219049-6f3b01e9e3a6"
+    },
+    {
+      "id": 3,
+      "name": "VR Controller Set",
+      "category": "accessories",
+      "price": 199.99,
+      "description": "Precision motion controllers for immersive VR experience",
+      "image": "https://images.unsplash.com/photo-1581092919534-1c1f8a0eaf1b"
+    },
+    {
+      "id": 4,
+      "name": "VR Gaming Bundle",
+      "category": "vr",
+      "price": 799.99,
+      "description": "Complete VR gaming setup with headset and controllers",
+      "image": "https://images.unsplash.com/photo-1612832021084-45b84f07b89d"
+    },
+    {
+      "id": 5,
+      "name": "AR Development Kit",
+      "category": "ar",
+      "price": 1299.99,
+      "description": "Professional AR development kit for creators",
+      "image": "https://images.unsplash.com/photo-1633114127408-af671c774b58"
+    },
+    {
+      "id": 6,
+      "name": "VR Motion Tracker",
+      "category": "accessories",
+      "price": 149.99,
+      "description": "Advanced motion tracking sensors for VR systems",
+      "image": "https://images.unsplash.com/photo-1614064641938-3bbee52942c7"
+    }
+  ],
+  "testimonials": [
+    {
+      "text": "The VR experience exceeded all my expectations. The quality is outstanding!",
+      "author": "John Doe",
+      "role": "Tech Enthusiast"
+    },
+    {
+      "text": "Best AR glasses I've ever used. The future is here!",
+      "author": "Jane Smith",
+      "role": "Developer"
+    },
+    {
+      "text": "Incredible technology that has transformed our training programs.",
+      "author": "Mike Johnson",
+      "role": "Enterprise Client"
+    }
+  ],
+  "features": {
+    "vr": [
+      {
+        "title": "4K Ultra HD Display",
+        "description": "Crystal clear visuals with 4K resolution per eye"
+      },
+      {
+        "title": "360° Tracking",
+        "description": "Precise motion tracking for immersive experiences"
+      },
+      {
+        "title": "Wireless Freedom",
+        "description": "Untethered VR experience with advanced wireless technology"
+      }
+    ],
+    "ar": [
+      {
+        "title": "Holographic Display",
+        "description": "See digital content overlaid on the real world"
+      },
+      {
+        "title": "Gesture Control",
+        "description": "Interact with AR content using natural hand gestures"
+      },
+      {
+        "title": "Spatial Mapping",
+        "description": "Advanced spatial understanding for realistic AR placement"
+      }
+    ]
+  }
+}
+

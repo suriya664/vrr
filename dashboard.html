@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - VR/AR Pro</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2300d4ff;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%238b5cf6;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='20' fill='url(%23grad)'/%3E%3Ctext x='50' y='70' font-size='60' text-anchor='middle' fill='white'%3E🥽%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Sidebar Toggle (Mobile) -->
+    <button class="sidebar-toggle">☰</button>
+
+    <!-- Dashboard Container -->
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="dashboard-sidebar">
+            <div style="padding: 2rem; border-bottom: 1px solid rgba(0, 212, 255, 0.2);">
+                <a href="index.html" class="logo" style="font-size: 1.5rem; display: block; margin-bottom: 1.5rem;">VR/AR Pro</a>
+                <p class="user-name" style="color: var(--text-primary); font-weight: bold; margin-bottom: 0.25rem;">User</p>
+                <p class="user-email" style="color: var(--text-secondary); font-size: 0.9rem;">user@example.com</p>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="dashboard.html" class="active">Overview</a></li>
+                <li><a href="dashboard-analytics.html">Analytics</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="demo.html">Demos</a></li>
+                <li><a href="contact.html">Support</a></li>
+                <li><a href="pricing.html">Billing</a></li>
+                <li style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(0, 212, 255, 0.2);">
+                    <button class="btn btn-secondary logout-btn" style="width: 100%;">Logout</button>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="dashboard-content">
+            <h1 style="margin-bottom: 2rem; color: var(--primary-cyan);">Dashboard Overview</h1>
+
+            <!-- Stats Grid -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value stat-total-users">0</div>
+                    <div class="stat-label">Total Users</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value stat-active-sessions">0</div>
+                    <div class="stat-label">Active Sessions</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value stat-revenue">$0</div>
+                    <div class="stat-label">Revenue</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value stat-products">0</div>
+                    <div class="stat-label">Products</div>
+                </div>
+            </div>
+
+            <!-- Recent Activity -->
+            <div class="card">
+                <h2 style="color: var(--primary-cyan); margin-bottom: 1.5rem;">Recent Activity</h2>
+                <table class="data-table" id="activity-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>User</th>
+                            <th>Action</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="4" style="text-align: center; color: var(--text-secondary);">Loading...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="card" style="margin-top: 2rem;">
+                <h2 style="color: var(--primary-cyan); margin-bottom: 1.5rem;">Quick Actions</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                    <a href="products.html" class="btn btn-primary" style="text-align: center;">View Products</a>
+                    <a href="demo.html" class="btn btn-secondary" style="text-align: center;">Request Demo</a>
+                    <a href="dashboard-analytics.html" class="btn btn-secondary" style="text-align: center;">View Analytics</a>
+                    <a href="contact.html" class="btn btn-secondary" style="text-align: center;">Contact Support</a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle">🌓</button>
+
+    <script src="js/main.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
+
