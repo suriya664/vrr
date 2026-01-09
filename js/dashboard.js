@@ -130,7 +130,6 @@ $(document).ready(function() {
                 // Render default charts
                 renderCharts({
                     userGrowth: [120, 150, 180, 200, 250, 300, 350],
-                    revenue: [10000, 15000, 12000, 18000, 20000, 25000, 30000],
                     productViews: [450, 520, 480, 600, 750, 800, 900]
                 });
             }
@@ -142,11 +141,6 @@ $(document).ready(function() {
         // User Growth Chart
         if (data.userGrowth) {
             renderBarChart('#user-growth-chart', data.userGrowth, 'Users');
-        }
-
-        // Revenue Chart
-        if (data.revenue) {
-            renderLineChart('#revenue-chart', data.revenue, 'Revenue', '$');
         }
 
         // Product Views Chart
