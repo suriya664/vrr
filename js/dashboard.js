@@ -18,8 +18,31 @@ $(document).ready(function() {
     loadAnalyticsData();
 
     // ===== SIDEBAR TOGGLE (MOBILE) =====
-    $('.sidebar-toggle').on('click', function() {
+    $('.sidebar-toggle').on('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
         $('.dashboard-sidebar').toggleClass('active');
+    });
+
+    // Close sidebar when clicking on a menu link on mobile
+    $('.sidebar-menu a').on('click', function() {
+        if ($(window).width() <= 768) {
+            $('.dashboard-sidebar').removeClass('active');
+        }
+    });
+
+    // Close sidebar when clicking outside on mobile
+    $(document).on('click', function(e) {
+        if ($(window).width() <= 768) {
+            if (!$(e.target).closest('.dashboard-sidebar, .sidebar-toggle').length) {
+                $('.dashboard-sidebar').removeClass('active');
+            }
+        }
+    });
+
+    // Prevent sidebar clicks from closing the sidebar
+    $('.dashboard-sidebar').on('click', function(e) {
+        e.stopPropagation();
     });
 
     // ===== LOAD USER DATA =====
